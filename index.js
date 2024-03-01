@@ -43,7 +43,7 @@ const upload = multer({
 
 const regSchema = mongoose.Schema({
   email: String,
-  password: Number,
+  password: String,
   cart: Array,
 });
 
