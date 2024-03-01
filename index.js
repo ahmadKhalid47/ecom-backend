@@ -396,5 +396,5 @@ app.post("/rating/:productId", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("okk");
+  console.log("ok");
 });
