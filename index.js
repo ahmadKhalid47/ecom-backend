@@ -11,6 +11,9 @@ require("dotenv").config();
 const port = process.env.PORT || 5000;
 const frontendKey = process.env.FRONTEND_KEY;
 const mongodbKey = process.env.MONGODB_KEY;
+console.log(frontendKey, "Front End Key");
+console.log(mongodbKey, "MongoDb Key");
+
 PayPal.configure({
   mode: "sandbox",
   client_id:
