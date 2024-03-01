@@ -22,7 +22,11 @@ PayPal.configure({
     "EGZqcNaTQ_BWgLueMXtdcpoiUD67nfb2Sy9W5n-U8hYzEPEnq5VvNNDvr5-3Upal2-N1Dhb-Iq3Uz5YV",
 });
 
-app.use(cors());
+app.use(
+  cors({
+    origin: frontendKey,
+  })
+);
 app.use(bodyParser.json());
 
 mongoose.connect(mongodbKey);
