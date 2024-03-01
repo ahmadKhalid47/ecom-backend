@@ -286,13 +286,13 @@ app.get("/success/:demyId", async (req, res) => {
   } = demy_order;
 
   await orderModel({
-    product_Detail,
-    product_Image,
-    product_id,
-    user_id,
-    name,
-    phone,
-    address,
+    product_Detail: product_Detail,
+    product_Image: product_Image,
+    product_id: product_id,
+    user_id: user_id,
+    name: name,
+    phone: phone,
+    address: address,
   }).save();
   const conditions = {
     product_id: product_id,
